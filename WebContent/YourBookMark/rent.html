@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/rent.css">
+    <title>당신의책갈피</title>
+</head>
+<body>
+    <div id=container>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <div class="dropdown">
+                            <span class="dropbutton">소개</span>
+                            <div class="dropdown-content">
+                                <a href="#">책방소개</a>
+                                <a href="#">오시는길</a>
+                                <a href="#">아카이빙</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <span class="dropbutton">공지</span>
+                            <div class="dropdown-content">
+                                <a href="#">행사</a>
+                                <a href="#">신간입고</a>
+                                <a href="#">휴일</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <span class="dropbutton">참여</span>
+                            <div class="dropdown-content">
+                                <a href="#">자유게시판</a>
+                                <a href="#">당신의작업실</a>
+                                <a href="#">온라인주문</a>
+                                <a href="./rent.html">대관문의</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div id = "logo-center">
+            <a href="./index.html"><img src="./images/logo.png" id="logo" alt="logo" ></a>
+            </div>
+            <div id="login-area">
+                <span><a href="#">로그인</a></span>
+                <span><a href="./signup.html" >회원가입</a></span>
+            </div>
+        </header>
+        <main>
+            <div id="content-upper">
+            
+                <div id="button-div">
+                    <button type="button" onclick="location.href='./rent.html'" class="btn">·<br>대관 문의<br>·</button>            
+                </div>
+                <div id="about">
+                    
+                    당신의 책갈피에서는 <br>
+                    2시간에 인당 5천원의 대관료를 받고 <br>
+                    독서모임 등의 대관을 진행하고 있습니다. <br>
+                    대관 요청이 필요하신 분은 <br>
+                    아래 해당 주문 양식을 통해 신청해주세요. <br>
+                        
+                </div>
+            </div>
+            
+            <div id="content-lower">
+                <div id="contract">
+                    <div>
+                        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀<b>개인정보 수집 및 이용 및 제 3자 제공 동의서</b><br> <br>
+                    ⠀1 개인정보의 수집 및 이용 동의서 <br>
+                    ⠀⠀- 이용자가 제공한 모든 정보는 다음의 목적을 위해 활용하며, 하기 목적 이외의 용도로는 <br>⠀⠀⠀사용되지 않습니다. <br>
+                    ⠀⠀⠀① 개인정보 수집 항목 및 수집·이용 목적 <br>
+                    ⠀⠀⠀⠀가) 수집 항목 (필수항목) <br>
+                    ⠀⠀⠀⠀⠀- 성명, 휴대전화번호, 주소 <br>
+                    ⠀⠀⠀⠀나) 수집 및 이용 목적 <br>
+                    ⠀⠀⠀⠀⠀- 도서 배송 <br>
+                    ⠀⠀⠀② 개인정보 보유 및 이용기간 <br>
+                    ⠀⠀⠀⠀⠀- 수집·이용 동의일로부터 배송일 이후 2일까지 <br>
+                    ⠀⠀⠀③ 동의거부관리 <br>
+                    ⠀⠀⠀⠀⠀- 귀하께서는 본 안내에 따른 개인정보 수집, 이용에 대하여 동의를 거부하실 권리가 있습니다. <br>
+                    </div>
+                    <div id="select">
+                        <input type="radio" id="agree" name="agree" checked onclick="agree(1)"><label for="agree">동의합니다.</label>
+                        <input type="radio" id="disagree" name="agree" onclick="agree(2)"><label for="disagree">동의하지않습니다.</label>
+                    </div>
+                    <div id="btn-agree"><!--display:none>보이기-->
+                        <button id="go-on" onclick="goOn()">계속신청하기</button>
+                    </div>
+                </div>   
+            </div>
+            <div id="hidden">
+                <div id="insert-info">
+                    <div id="insert-info-text">
+                        담당자 이름<br>
+                        <input type="text" placeholder="모임 담당자명"><br>
+                        담당자 연락처<br>
+                        <input type="text" placeholder="담당자 연락처"><br>
+                        대관 일자 및 시간<br>
+                        <input type="text" placeholder="(ex: 1월 5일(토) 2시~4시) "> <br>
+                        참여 인원 <br>
+                        <input type="text" placeholder="참여인원"> <br>
+                        기타 요청 사항 <br>
+                        <input type="text" placeholder="기타 요청 사항"><br>                   
+                    </div>
+                    <div id="submit-div">
+                        <button>·<br>신청서 제출하기<br>·</button>
+                    </div>
+                </div>
+            </div> 
+        
+            
+
+        </main>
+        <footer>
+            <div id="footer-left">
+                <ul>
+                    <li>대표자: 박범각, 허민아</li>
+                    <li>주소 : 부산시 남구 수영로 334번길 32-1 1층 </li>
+                    <li>사업자등록번호 : 276-39-01004</li>
+                    <li>대표전화: 010-8465-3450 </li>
+                </ul>
+            </div>
+            <div id="footer-right">
+                <a href="https://instagram.com/golmok_bookmark?igshid=Zjc2ZTc4Nzk=" target="_blank"><img src="./images/sm-instagram.png" alt="instaLogo" class="social-medias"></a>
+                <a href="https://m.facebook.com/profile.php?id=100002204462418" target="_blank"><img src="./images/sm_facebook.png" alt="fbLogo" class="social-medias"></a>
+                <a href="https://brunch.co.kr/@pbg2000/" target="_blank"><img src="./images/sm_brunch.png" alt="brunchLogo" class="social-medias"></a>
+            </div>
+        </footer>
+    </div>
+
+
+    <script>
+        
+        function agree(num){
+            if(num==1){
+                document.querySelector("#go-on").style.display="block";
+            }else{
+                document.querySelector("#go-on").style.display="none";
+                document.querySelector("#hidden").style.display="none";
+                document.querySelector("#insert-info").style.display="none";
+            }
+        }
+        function goOn(){
+            document.querySelector("#hidden").style.display="flex";
+            document.querySelector("#insert-info").style.display="block";
+            //document.querySelector("#insert-info").style.justify-content="center";
+            //document.querySelector("#insert-info").style.display="block";
+        }
+    </script>
+</body>
+</html>

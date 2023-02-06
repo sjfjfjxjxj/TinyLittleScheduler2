@@ -1,0 +1,271 @@
+@font-face {
+  font-family: 'Chosunilbo_myungjo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Hankc';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/hani/Hankc/Hankc.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/hani/Hankc/Hankc.woff') format('woff');
+  }
+  
+  .hankc * {
+   font-family: 'Hankc', serif;
+  }
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+}
+#container{
+    width : 1000px;
+    margin: 0 auto;
+}
+ul{
+    list-style-type: none;       
+}
+
+
+header{
+    font-family: 'Pretendard-Regular';
+    
+    display: flex;
+     --justify-content: space-evenly;
+     align-items : flex-end;
+    background-color: rgb(37, 37, 37); 
+    color: white;
+     
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+
+
+nav ul li{
+    float: left;
+    margin-left: 40px;
+   
+}
+.dropdown{
+    position : relative;
+    display: inline-block;
+
+}
+.dropdown-content{
+    display: none;
+    position : absolute;
+    z-index: 1;
+    line-height: 30px;
+    background-color: rgb(37, 37, 37);
+}
+.dropdown-content a{
+    display: block;
+    color: white;
+    text-decoration-line: none;
+    text-align: center;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+    
+    width: 100px;
+}
+
+
+#logo{
+  margin-left: 230px;
+  width: 80px;
+  padding-top: 5px;
+}
+#login-area{
+    margin-left: 220px;
+    margin-bottom: 16px;
+}
+#login-area span{
+    margin-left: 35px;
+}
+
+#login-area span a{
+    color: white;
+    text-decoration-line: none;
+}
+
+
+
+main{
+    height: 600px;
+}
+
+
+
+img{
+    width: 100%;
+  }
+  .login {
+      height: 600px;
+      width: 100%;
+      background-color: rgb(37, 37, 37);
+      position: relative;
+  }
+  .login_box {
+      width: 980px;
+      height: 600px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 1px 4px 22px -8px #0004;
+      display: flex;
+      overflow: hidden;
+  }
+  .login_box .left{
+    width: 41%;
+    height: 100%;
+    padding: 25px 25px;
+    
+  }
+  .login_box .right{
+    width: 59%;
+    height: 100%  
+  }
+  .left .top_link a {
+      color: #452A5A;
+      font-weight: 400;
+      font-family: 'Chosunilbo_myungjo';
+  }
+  .left .top_link{
+    height: 20px
+  }
+  .left .contact{
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      height: 100%;
+      width: 73%;
+      margin: auto;
+  }
+  /*.left h3{
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 30px;
+  }*/
+  .left input {
+    font-family: 'Pretendard-Regular';
+      border: none;
+      width: 80%;
+      margin: 15px 0px;
+      border-bottom: 1px solid #4f30677d;
+      padding: 7px 9px;
+      width: 100%;
+      overflow: hidden;
+      background: transparent;
+      font-weight: 300;
+      font-size: 14px;
+  }
+  .left{
+    background: linear-gradient(-45deg, #dcd7e0, #fff);
+  }
+  .submit {
+    font-family: 'Chosunilbo_myungjo';
+      border: none;
+      padding: 15px 70px;
+      border-radius: 8px;
+      display: block;
+      margin: auto;
+      margin-top: 40px;
+      background: rgb(37, 37, 37);
+      color: #fff;
+      font-weight: bold;
+      -webkit-box-shadow: 0px 9px 15px -11px rgba(37,37,37,1);
+      -moz-box-shadow: 0px 9px 15px -11px rgba(37,37,37,1);
+      box-shadow: 0px 9px 15px -11px rgba(37,37,37,1);
+  }
+  
+  
+  
+  .right {
+    background: linear-gradient(212.38deg, rgba(207, 207, 207, 0.7) 0%, rgba(155, 155, 155, 0.71) 100%), url(../images/signup.png);
+    color: #fff;
+    position: relative;
+  }
+  
+  .right .right-text{
+    height: 100%;
+    position: relative;
+    transform: translate(0%, 45%);
+  }
+  .right-text #right-text1{
+    font-family: 'Chosunilbo_myungjo';
+    margin-left: 30px;
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 40px;
+    
+  }
+  .right-text #right-text2{
+    margin-left: 10px;
+    font-family: 'Chosunilbo_myungjo';
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 55px;
+    
+  }
+  
+  .right .right-inductor{
+    position: absolute;
+    width: 70px;
+    height: 7px;
+    background: #fff0;
+    left: 50%;
+    bottom: 70px;
+    transform: translate(-50%, 0%);
+  }
+  .top_link img {
+      width: 28px;
+      padding-right: 7px;
+      margin-top: -3px;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    font-family: 'Pretendard-Regular';
+    background-color: rgb(37, 37, 37);
+    color : white;
+    font-size : 0.7em;
+    display: flex;
+    --justify-content: space-between;
+}
+#footer-right{
+    margin-left: 610px;
+}
+.social-medias{
+    width: 25px;
+    margin-top: 12px;
+    margin-right: 14px;
+}

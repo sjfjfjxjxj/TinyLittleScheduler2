@@ -1,0 +1,227 @@
+@font-face {
+    font-family: 'Chosunilbo_myungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+
+@font-face {
+    font-family: 'Hankc';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/hani/Hankc/Hankc.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/hani/Hankc/Hankc.woff') format('woff');
+  }
+  
+  .hankc * {
+   font-family: 'Hankc', serif;
+  }
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+}
+#container{
+    width : 1000px;
+    margin: 0 auto;
+}
+ul{
+    list-style-type: none;       
+}
+
+
+header{
+    font-family: 'Pretendard-Regular';
+    
+    display: flex;
+     --justify-content: space-evenly;
+     align-items : flex-end;
+    background-color: rgb(37, 37, 37); 
+    color: white;
+     
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+
+
+nav ul li{
+    float: left;
+    margin-left: 40px;
+   
+}
+.dropdown{
+    position : relative;
+    display: inline-block;
+
+}
+.dropdown-content{
+    display: none;
+    position : absolute;
+    z-index: 1;
+    line-height: 30px;
+    background-color: rgb(37, 37, 37);
+}
+.dropdown-content a{
+    display: block;
+    color: white;
+    text-decoration-line: none;
+    text-align: center;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+    
+    width: 100px;
+}
+
+
+#logo{
+  margin-left: 230px;
+  width: 80px;
+  padding-top: 5px;
+}
+#login-area{
+    margin-left: 220px;
+    margin-bottom: 16px;
+}
+#login-area span{
+    margin-left: 35px;
+}
+
+#login-area span a{
+    color: white;
+    text-decoration-line: none;
+}
+
+
+
+#photos{
+    height: 1050px;
+    overflow: hidden; /*이미지 잘리는건 밖으로나감*/
+    position: relative;
+    background-color: rgb(37, 37, 37);
+}
+
+#photos span{
+    font-family: 'Chosunilbo_myungjo';
+    position: absolute;
+    z-index: 1;
+    color : white;
+    font-size: 40px;
+    transform: translate( -193%, 160% );
+    width: 800px;
+    font-weight: bolder;
+   
+    
+}
+
+#photos img{
+    margin-top: 30px;
+    width: 60%;
+    transform: translate(34%,0%);
+
+}
+
+
+#content-upper{
+    background-color: rgb(37, 37, 37);
+    height: 650px;
+    padding: 10px;
+    color: white;
+    --display: flex;
+    position: relative;
+
+}
+#about{
+    font-family: 'Chosunilbo_myungjo';
+    padding-top: 47px;
+    margin-left: 40px;
+    --margin-top: 10px;
+    width: 620px;
+    height: 400px;
+    text-align: center;
+    --border-left: 1px solid white;
+    border-bottom: 1px dotted white;
+    line-height: 35px;
+    position: absolute;
+    left: 15.5%;
+    top: 30%;
+    
+}
+
+.btn{
+    position: absolute;
+    top: 5%;
+    left: 43%;
+    font-family: 'Chosunilbo_myungjo';
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius : 50%;
+    width: 120px;
+    height: 120px;
+    border: 3px solid white;
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+.btn:hover{
+    border: 5px solid white;
+    font-weight: bolder;
+}
+
+#content-lower{
+    font-family: 'Chosunilbo_myungjo';
+    height: 330px;
+    background-color: rgb(37, 37, 37);
+    
+    color: white;
+    --display: flex;
+    position: relative;
+
+   
+    text-align: center;
+    --border-left: 2px solid white;
+    border-bottom: 1px dotted white;
+    line-height: 35px;
+}
+#content-lower a{
+    color: white;
+    text-decoration-line: none;
+    font-size: 20px;
+}
+#content-lower a:hover{
+    color: white;
+    text-decoration-line: none;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+footer{
+    font-family: 'Pretendard-Regular';
+    background-color: rgb(37, 37, 37);
+    color : white;
+    font-size : 0.7em;
+    display: flex;
+    --justify-content: space-between;
+}
+#footer-right{
+    margin-left: 610px;
+}
+.social-medias{
+    width: 25px;
+    margin-top: 12px;
+    margin-right: 14px;
+}

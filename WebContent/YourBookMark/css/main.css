@@ -1,0 +1,239 @@
+@font-face {
+    font-family: 'Chosunilbo_myungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+
+@font-face {
+    font-family: 'Hankc';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/hani/Hankc/Hankc.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/hani/Hankc/Hankc.woff') format('woff');
+  }
+  
+  .hankc * {
+   font-family: 'Hankc', serif;
+  }
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+}
+#container{
+    width : 1000px;
+    margin: 0 auto;
+}
+ul{
+    list-style-type: none;       
+}
+
+
+header{
+    font-family: 'Pretendard-Regular';
+    
+    display: flex;
+     --justify-content: space-evenly;
+     align-items : flex-end;
+    background-color: rgb(37, 37, 37); 
+    color: white;
+     
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+
+
+nav ul li{
+    float: left;
+    margin-left: 40px;
+   
+}
+.dropdown{
+    position : relative;
+    display: inline-block;
+
+}
+.dropdown-content{
+    display: none;
+    position : absolute;
+    z-index: 1;
+    line-height: 30px;
+    background-color: rgb(37, 37, 37);
+}
+.dropdown-content a{
+    display: block;
+    color: white;
+    text-decoration-line: none;
+    text-align: center;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+    
+    width: 100px;
+}
+
+
+#logo{
+  margin-left: 230px;
+  width: 80px;
+  padding-top: 5px;
+}
+#login-area{
+    margin-left: 220px;
+    margin-bottom: 16px;
+}
+#login-area span{
+    margin-left: 35px;
+}
+
+#login-area span a{
+    color: white;
+    text-decoration-line: none;
+}
+
+
+
+#photos{
+    height: 400px;
+    overflow: hidden; /*이미지 잘리는건 밖으로나감*/
+    position: relative;
+}
+
+#photos span{
+    font-family: 'Chosunilbo_myungjo';
+    position: absolute;
+    z-index: 1;
+    color : white;
+    font-size: 40px;
+    transform: translate( -193%, 160% );
+    width: 500px;
+    font-weight: bolder;
+   
+}
+
+#photos img{
+
+    width: 100%;
+    transition-property: height;
+    --transition-duration: 5s;
+    --transition-timing-function: linear;
+    transition: transform 10s linear;
+    transform: translateY(-800px);
+}
+#photos img:hover{
+    transition: transform 10s linear;
+    transform: translateY(0px);
+}
+
+
+#middle-menu{
+    background-color: rgb(37, 37, 37);
+    height: 160px;
+    padding: 10px;
+    color: white;
+    display: flex;
+}
+#board fieldset{
+    margin-left: 40px;
+    width: 620px;
+    height: 130px;
+}
+legend{
+    font-family: 'Chosunilbo_myungjo';
+}
+
+.btn{
+    font-family: 'Chosunilbo_myungjo';
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius : 50%;
+    width: 120px;
+    height: 120px;
+    border: 3px solid white;
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+.btn:hover{
+    border: 5px solid white;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+#new-books{
+    height: 290px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.btn-reverse{
+    font-family: 'Chosunilbo_myungjo';
+    margin-top: 85px;
+    margin-left: 20px;
+    border-radius : 50%;
+    width: 120px;
+    height: 120px;
+    border: 3px solid rgb(37, 37, 37);
+    background-color: white;
+    color: rgb(37, 37, 37);
+}
+.btn-reverse:hover{
+    border: 5px solid rgb(37, 37, 37);
+    font-weight: bolder;
+}
+
+.book{
+    width: 170.633px;
+    position: relative;
+    
+}
+.book-cover{
+    position: absolute;
+    margin-top: 20px;
+    height: 250px;
+    opacity: 1;
+    z-index: 1;
+}
+.book-cover:hover{
+    opacity:0.3; 
+}
+.overlap{
+    margin-top: 25px;
+    width: 170.633px;
+    height: 250px;
+    position:absolute;
+    text-align: center;
+    line-height: 250px;
+}
+
+
+footer{
+    font-family: 'Pretendard-Regular';
+    background-color: rgb(37, 37, 37);
+    color : white;
+    font-size : 0.7em;
+    display: flex;
+    --justify-content: space-between;
+}
+#footer-right{
+    margin-left: 610px;
+}
+.social-medias{
+    width: 25px;
+    margin-top: 12px;
+    margin-right: 14px;
+}

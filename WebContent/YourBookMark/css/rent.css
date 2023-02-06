@@ -1,0 +1,315 @@
+@font-face {
+    font-family: 'Chosunilbo_myungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+
+@font-face {
+    font-family: 'Hankc';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/hani/Hankc/Hankc.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/hani/Hankc/Hankc.woff') format('woff');
+  }
+  
+  .hankc * {
+   font-family: 'Hankc', serif;
+  }
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+}
+#container{
+    width : 1000px;
+    margin: 0 auto;
+}
+ul{
+    list-style-type: none;       
+}
+
+
+header{
+    font-family: 'Pretendard-Regular';
+    
+    display: flex;
+     --justify-content: space-evenly;
+     align-items : flex-end;
+    background-color: rgb(37, 37, 37); 
+    color: white;
+     
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+
+
+nav ul li{
+    float: left;
+    margin-left: 40px;
+   
+}
+.dropdown{
+    position : relative;
+    display: inline-block;
+
+}
+.dropdown-content{
+    display: none;
+    position : absolute;
+    z-index: 1;
+    line-height: 30px;
+    background-color: rgb(37, 37, 37);
+}
+.dropdown-content a{
+    display: block;
+    color: white;
+    text-decoration-line: none;
+    text-align: center;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+    
+    width: 100px;
+}
+
+
+#logo{
+  margin-left: 230px;
+  width: 80px;
+  padding-top: 5px;
+}
+#login-area{
+    margin-left: 220px;
+    margin-bottom: 16px;
+}
+#login-area span{
+    margin-left: 35px;
+}
+
+#login-area span a{
+    color: white;
+    text-decoration-line: none;
+}
+
+
+
+#photos{
+    height: 1050px;
+    overflow: hidden; /*이미지 잘리는건 밖으로나감*/
+    position: relative;
+    background-color: rgb(37, 37, 37);
+}
+
+#photos span{
+    font-family: 'Chosunilbo_myungjo';
+    position: absolute;
+    z-index: 1;
+    color : white;
+    font-size: 40px;
+    transform: translate( -193%, 160% );
+    width: 800px;
+    font-weight: bolder;
+   
+    
+}
+
+
+
+
+#content-upper{
+    background-color: rgb(37, 37, 37);
+    height: 450px;
+    padding: 10px;
+    color: white;
+    --display: flex;
+    position: relative;
+
+}
+#about{
+    font-family: 'Chosunilbo_myungjo';
+    padding-top: 47px;
+    margin-left: 40px;
+    margin-top: 10px;
+    width: 620px;
+    height: 270px;
+    text-align: center;
+    --border-left: 1px solid white;
+    border-bottom: 1px dotted white;
+    line-height: 35px;
+    position: absolute;
+    left: 15.5%;
+    top: 30%;
+    
+}
+
+.btn{
+    position: absolute;
+    top: 5%;
+    left: 43%;
+    font-family: 'Chosunilbo_myungjo';
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius : 50%;
+    width: 120px;
+    height: 120px;
+    border: 3px solid white;
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+.btn:hover{
+    border: 5px solid white;
+    font-weight: bolder;
+}
+
+
+
+#content-lower{
+    background-color: rgb(37, 37, 37);
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+#contract{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 22px;
+    margin-top: 20px;
+    font-family: 'Chosunilbo_myungjo';
+    height: 410px;
+    background-color: whitesmoke;
+    width: 600px;
+    border-top-right-radius: 3%;   
+    border-bottom-left-radius: 3%;
+    --border-radius: 3%;
+    text-align: left;
+    font-size: smaller;
+    line-height: 20px;
+}
+b{
+    font-size: larger;
+}
+#select{
+    padding-top: 17px;
+    display: flex;
+    justify-content: center;
+}
+#agree label{
+    margin-right: 30px;
+}
+
+#btn-agree{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+#go-on {
+    appearance: none;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: auto;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: rgb(37,37,37);
+    color: white;
+}
+#go-on:hover{
+    background-color: rgb(114, 114, 114);
+    
+  }
+
+#hidden{
+    background-color: rgb(37, 37, 37);
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+#insert-info{
+    display: none;
+    font-family: 'Chosunilbo_myungjo';
+    height: 410px;
+    background-color: whitesmoke;
+    width: 600px;
+    padding-left: 60px;
+    padding-top: 60px;
+    border-top-right-radius: 3%;   
+    border-bottom-left-radius: 3%;
+    line-height: 20px;
+}
+#insert-info input{
+    width: 300px;
+    margin-top: 3px;
+    margin-bottom: 13px;
+    font-size: large;
+    border-style: none;
+    background-color: whitesmoke;
+    border-bottom: 1px dotted rgb(37, 37, 37);
+}
+#insert-info input::placeholder{
+    font-family: 'Chosunilbo_myungjo';
+    font-size: small;
+    color:rgba(97, 97, 97, 0.486)
+}
+#insert-info-text{
+    float: left;
+}
+#submit-div{
+    width: 200px;
+    height: 300px;
+    float: left;
+    margin-top: 70px;
+    margin-left: 35px;
+}
+#submit-div button{
+    font-family: 'Chosunilbo_myungjo';
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius : 50%;
+    width: 120px;
+    height: 120px;
+    border: 1px solid rgb(37, 37, 37);
+    background-color:  whitesmoke;
+    color: rgb(37, 37, 37);
+}
+#submit-div button:hover{
+    border: 3px solid rgb(37, 37, 37);
+    font-weight: bolder;
+}
+
+
+
+
+
+
+footer{
+    font-family: 'Pretendard-Regular';
+    background-color: rgb(37, 37, 37);
+    color : white;
+    font-size : 0.7em;
+    display: flex;
+    --justify-content: space-between;
+}
+#footer-right{
+    margin-left: 610px;
+}
+.social-medias{
+    width: 25px;
+    margin-top: 12px;
+    margin-right: 14px;
+}

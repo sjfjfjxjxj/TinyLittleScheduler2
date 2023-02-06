@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/resources/main.css">
+</head>
+<body>
+    <div id="container">
+        <div id="headernav">
+            <header>
+                <div id="logo"><a href="/index.jsp">심플스케줄러</a></div>
+                
+               	<form action = "/member/login.do" method="post">
+	                    <ul>
+	                        <div id="login-area1"><li class="input">ID<input type="text"  name="mem-id"></li></div>
+	                        <div id="login-area2"><li class="input">PW<input type="password" name="mem-pw"></li></div>
+	                    </ul>
+                        <div id="login-area3"><input type="image" id="login" src="/resources/login.png" alt="로긴"></div>
+                        <div id="login-area4"><a href="/member/register"><img id="signup" src="/resources/signup.png" alt="가입"></a></div>
+            	    </form>
+            	    
+            </header><br>
+            <nav>
+                <div id="menus">
+                <ul >
+                    <li ><a href="#">나의 전체 일정 보기</a></li>
+                    <li ><a href="#">공식 일정만 보기</a></li>
+                    <li ><a href="#">개인 일정만 보기</a></li>
+                    <li ><a href="#">날짜검색으로 일정 보기</a></li>
+                    <li >¤</li>
+                    <li ><a href="#">새 일정 입력하기</a></li>
+                    <li ><a href="#">일정 수정하기</a></li>
+                    <li ><a href="#">일정 삭제하기</a></li>
+                </ul>
+                </div>
+                <div id="separate">
+                    <img src="/resources/line.png" class="line">
+                    나의 정보 확인 및 수정하기
+                    <img src="/resources/line.png" class="line">
+                </div>               
+            </nav>
+        </div>
+        <main>
+            <p>…</p>
+            <div id="register-input">
+                <form action="/member/update" method="post">
+                    <ul>
+                        <li>
+                            <input type="text" name="mem-id" value="${member.memId}" readonly>
+                        </li>
+                        <li>
+                            <input type="password" name="mem-pw" placeholder="비밀번호 입력" value="${member.memPw}">
+                        </li>
+                        <li>
+                            <input type="text" name="mem-name" placeholder="사용할 이름 입력" value = "${member.memName}">
+                        </li>
+                        <li>
+                            <input type="text" value = "${member.memEnrollDate}">
+                        </li>
+                    </ul>
+                    <div>
+                        <button>수정하기</button>
+                    </div>
+                    <div>
+                        <button><a href="/member/withdraw">탈퇴하기</button>
+                    </div>
+                </form>
+            </div>
+
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </main>
+</body>
+</html>

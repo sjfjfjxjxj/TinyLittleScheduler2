@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>당신의책갈피</title>
+</head>
+<body>
+    <div id=container>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <div class="dropdown">
+                            <span class="dropbutton">소개</span>
+                            <div class="dropdown-content">
+                                <a href="#">책방소개</a>
+                                <a href="#">오시는길</a>
+                                <a href="#">아카이빙</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <span class="dropbutton">공지</span>
+                            <div class="dropdown-content">
+                                <a href="#">행사</a>
+                                <a href="#">신간입고</a>
+                                <a href="#">휴일</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <span class="dropbutton">참여</span>
+                            <div class="dropdown-content">
+                                <a href="#">자유게시판</a>
+                                <a href="#">당신의작업실</a>
+                                <a href="#">온라인주문</a>
+                                <a href="./rent.html">대관문의</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div id = "logo-center">
+            <a href="./index.html"><img src="./images/logo.png" id="logo" alt="logo" ></a>
+            </div>
+            <div id="login-area">
+                <span><a href="#">로그인</a></span>
+                <span><a href="./signup.html" >회원가입</a></span>
+            </div>
+        </header>
+        <main>
+            <div id="photos">
+                <img src="./images/mainphoto1.jpg" alt="사진영역">
+                <span>
+                    당신의 쉼,<br>
+                    당신의 독서,<br>
+                    당신의 책갈피.
+                </span>
+            </div>
+            
+            <div id="middle-menu">
+                <div id="board">
+                    <fieldset>
+                        <legend>공지사항</legend>
+                    </fieldset>    
+                </div>
+                <div id="button-div">
+                    <button type="button" onclick="location.href='./bookclub.html'" class="btn">이달의독서모임<br>·<br>신청바로가기</button>
+                    <button type="button" onclick="location.href='#'" class="btn">·<br>당신의작업실<br>·</button>
+                </div>
+            </div>
+
+            <div id="new-books">
+                <div class="book">
+                    <button type="button" onclick="location.href='#'" class="btn-reverse">이달의신간<br>·<br>더보기</button>
+                </div>
+                <div class="book">
+                    <a href="https://search.shopping.naver.com/book/catalog/37423298643?query=%ED%91%B8%EB%A5%B8%EC%88%A8&NaPm=ct%3Dldoiw43k%7Cci%3D2a2b5e94583b123c2f741bb3a26d68715f5dd375%7Ctr%3Dboksl%7Csn%3D95694%7Chk%3Df63bfc2ce22546797d0464d9fffa724cdce19b4d" target="_blank">
+                        <img src="./images/book1.jpg" class="book-cover" alt="">
+                        <span class="overlap">푸른숨</span>
+                        
+                    </a>
+                </div>
+                <div class="book">
+                    <a href="https://search.shopping.naver.com/book/catalog/37424551623?cat_id=50005859&frm=PBOKMOD&query=%EC%BB%AC%ED%8B%B0%EC%8B%9C&NaPm=ct%3Dldoizaao%7Cci%3D0d147f0b99d036ac7240d4d50605fd50b83bf199%7Ctr%3Dboknx%7Csn%3D95694%7Chk%3Dbcbd0a89d08efb83acf5982256a1cd58b72505e8" target="_blank">
+                        <img src="./images/book2.jpg" class="book-cover" alt="">
+                        <span class="overlap">컬티시</span>
+                    </a>
+                </div>
+                <div class="book">
+                    <a href="https://search.shopping.naver.com/book/catalog/37343889625?cat_id=50010200&frm=PBOKMOD&query=%EC%8B%9C%EC%9E%A5%EC%9C%BC%EB%A1%9C%EA%B0%84%EC%84%B1%ED%8F%AD%EB%A0%A5&NaPm=ct%3Dldoj00j4%7Cci%3Dda11c29c31bba0c30583c2e4ff06e594d69befbe%7Ctr%3Dboknx%7Csn%3D95694%7Chk%3D8e1a63d2c094f5f26b9187dfa403ef8f32498ad3" target="_blank">
+                        <img src="./images/book3.jpg" class="book-cover" alt="">
+                        <span class="overlap">시장으로 간 성폭력</span>
+                    </a>
+                </div>
+                <div class="book">
+                    <a href="https://search.shopping.naver.com/book/catalog/37343894620?cat_id=50005859&frm=PBOKMOD&query=%EB%8F%99%EB%AC%BC%EB%85%B8%EB%8F%99&NaPm=ct%3Dldoj0sb4%7Cci%3De2037b7e682408e2696a62e468e5b47470b14b71%7Ctr%3Dboknx%7Csn%3D95694%7Chk%3D88f149532ba528b7637d3eafefd3de3339cce827" target="_blank">
+                        <img src="./images/book4.jpg" class="book-cover" alt="">
+                        <span class="overlap">동물노동</span>
+                    </a>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <div id="footer-left">
+                <ul>
+                    <li>대표자: 박범각, 허민아</li>
+                    <li>주소 : 부산시 남구 수영로 334번길 32-1 1층 </li>
+                    <li>사업자등록번호 : 276-39-01004</li>
+                    <li>대표전화: 010-8465-3450 </li>
+                </ul>
+            </div>
+            <div id="footer-right">
+                <a href="https://instagram.com/golmok_bookmark?igshid=Zjc2ZTc4Nzk=" target="_blank"><img src="./images/sm-instagram.png" alt="instaLogo" class="social-medias"></a>
+                <a href="https://m.facebook.com/profile.php?id=100002204462418" target="_blank"><img src="./images/sm_facebook.png" alt="fbLogo" class="social-medias"></a>
+                <a href="https://brunch.co.kr/@pbg2000/" target="_blank"><img src="./images/sm_brunch.png" alt="brunchLogo" class="social-medias"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
